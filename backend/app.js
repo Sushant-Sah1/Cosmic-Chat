@@ -15,7 +15,7 @@ const {
   makeadmin,
   makeowner,
 } = require("./controllers/memberController");
-const io = new Server(server, { cors: { origin: "http://localhost:5173" } });
+const io = new Server(server, { cors: { origin: "https://cosmic-chat-frontend.onrender.com" } });
 module.exports = io;
 
 app.use(cors());
