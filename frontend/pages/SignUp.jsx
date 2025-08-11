@@ -13,6 +13,7 @@ const SignUp = () => {
   const navigate=useNavigate("")
 
   async function handlesignup(params) {
+    console.log("SIGNING ING")
     try {
         const data = await axios.post("https://cosmic-chat-fqrq.onrender.com/api/auth/signup", {
           username: usernameref.current.value,
