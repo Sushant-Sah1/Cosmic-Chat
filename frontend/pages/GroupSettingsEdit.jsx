@@ -16,7 +16,7 @@ const GroupSettingsEdit = ({ socketRef }) => {
   async function handlesave(data) {
     try {
       const result = await axios.post(
-        "https://cosmic-chat-backend.onrender.com/api/groups/updategroup",
+        "https://cosmic-chat-fqrq.onrender.com/api/groups/updategroup",
         {
           data,
           groupid: groupdetails.id,
