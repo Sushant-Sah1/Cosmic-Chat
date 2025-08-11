@@ -6,7 +6,7 @@ const PublicGroups = ({ handlejoin }) => {
   async function handlepubsearch() {
     try {
       const data = await axios.post(
-        "http://localhost:4444/api/groups/searchpubgroup"
+        "https://cosmic-chat-backend.onrender.com/api/groups/searchpubgroup"
       );
       console.log(data);
       setpublicgroups(data.data);
