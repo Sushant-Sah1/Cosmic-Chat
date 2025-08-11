@@ -20,7 +20,7 @@ const GroupChat = () => {
   async function handleprevmessages() {
     try {
       const data = await axios.post(
-        "https://cosmic-chat-backend.onrender.com/api/groups/prevmessages",
+        "https://cosmic-chat-fqrq.onrender.com/api/groups/prevmessages",
         {
           groupid: groupdetail.id,
         }
@@ -43,7 +43,7 @@ const GroupChat = () => {
 
   useEffect(() => {
     console.log("connecting to socket");
-    socketRef.current = io("https://cosmic-chat-backend.onrender.com", {
+    socketRef.current = io("https://cosmic-chat-fqrq.onrender.com", {
       extraHeaders: {
         groupid: groupdetail.id,
         userid: userdetail.id,
