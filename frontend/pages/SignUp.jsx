@@ -14,7 +14,7 @@ const SignUp = () => {
 
   async function handlesignup(params) {
     try {
-        const data = await axios.post("https://cosmic-chat-backend.onrender.com/api/auth/signup", {
+        const data = await axios.post("https://cosmic-chat-fqrq.onrender.com/api/auth/signup", {
           username: usernameref.current.value,
           email: emailref.current.value,
           password: passwordref.current.value,
