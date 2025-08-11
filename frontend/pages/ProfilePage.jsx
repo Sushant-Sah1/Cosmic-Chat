@@ -17,7 +17,7 @@ const ProfilePage = () => {
   async function handlesave(data) {
     try {
       const result = await axios.post(
-        "https://cosmic-chat-backend.onrender.com/api/userprofile/updateprofile",
+        "https://cosmic-chat-fqrq.onrender.com/api/userprofile/updateprofile",
         {
           data,
           userid: userdetail.id,
