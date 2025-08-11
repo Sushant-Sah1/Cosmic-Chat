@@ -31,7 +31,7 @@ const DashBoard = () => {
   async function handlecreate() {
     try {
       const data = await axios.post(
-        "http://localhost:4444/api/groups/creategroup",
+        "https://cosmic-chat-backend.onrender.com/api/groups/creategroup",
         {
           groupname: createref.current.value,
           makerid: userdetail.id,
@@ -49,7 +49,7 @@ const DashBoard = () => {
   async function handleAuthorization(v) {
     try {
       const data = await axios.post(
-        "http://localhost:4444/api/member/checkmember",
+        "https://cosmic-chat-backend.onrender.com/api/member/checkmember",
         {
           groupname: v.groupid,
           userid: userdetail.id,
@@ -78,7 +78,7 @@ const DashBoard = () => {
   async function handlejoin(groupid) {
     try {
       const data = await axios.post(
-        "http://localhost:4444/api/groups/joingroup",
+        "https://cosmic-chat-backend.onrender.com/api/groups/joingroup",
         {
           groupid,
           userid: userdetail.id,
@@ -113,7 +113,7 @@ const DashBoard = () => {
   async function handlejoinedgroups() {
     try {
       const data = await axios.post(
-        "http://localhost:4444/api/groups/joinedgroups",
+        "https://cosmic-chat-backend.onrender.com/api/groups/joinedgroups",
         {
           userid: userdetail.id,
         }
