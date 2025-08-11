@@ -7,7 +7,7 @@ const PrivateGroups = ({ handlejoin, joinref }) => {
   async function handleprivsearch() {
     try {
       const data = await axios.post(
-        "http://localhost:4444/api/groups/searchprivgroup"
+        "https://cosmic-chat-backend.onrender.com/api/groups/searchprivgroup"
       );
       console.log(data)
       setprivgroups(data.data);
