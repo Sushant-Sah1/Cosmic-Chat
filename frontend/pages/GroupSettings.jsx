@@ -21,7 +21,7 @@ const GroupSettings = ({ socketRef }) => {
   async function handleexitgroup() {
     try {
       const data = await axios.post(
-        "https://cosmic-chat-backend.onrender.com/api/groups/exitgroup",
+        "https://cosmic-chat-fqrq.onrender.com/api/groups/exitgroup",
         {
           groupid: groupdetail.id,
           username: userdetail.username,
