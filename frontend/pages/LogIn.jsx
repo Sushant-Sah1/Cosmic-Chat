@@ -13,7 +13,7 @@ const LogIn = () => {
 
   async function handlelogin() {
     try {
-      const data = await axios.post("http://localhost:4444/api/auth/login", {
+      const data = await axios.post("https://cosmic-chat-backend.onrender.com/api/auth/login", {
         email: emailref.current.value,
         password: passwordref.current.value,
       });
