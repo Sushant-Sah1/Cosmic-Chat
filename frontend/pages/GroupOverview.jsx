@@ -24,7 +24,7 @@ const GroupOverview = () => {
   async function getmembers() {
     try {
       const data = await axios.post(
-        "https://cosmic-chat-backend.onrender.com/api/member/getmembers",
+        "https://cosmic-chat-fqrq.onrender.com/api/member/getmembers",
         {
           groupid: groupdetail.id,
         }
@@ -39,7 +39,7 @@ const GroupOverview = () => {
   useEffect(() => {
     getmembers();
     console.log("connecting to socket");
-    socketRef.current = io("https://cosmic-chat-backend.onrender.com", {
+    socketRef.current = io("https://cosmic-chat-fqrq.onrender.com", {
       extraHeaders: {
         groupid: groupdetail.id,
         userid: userdetail.id,
